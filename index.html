@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cas Personal Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+<!---------------------- Home Page ------------------------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <!------Tab Links------>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#designs">Designs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!------Left Side: Name and description------>
+        <div class="header-text">
+            <p class="top-text">WELCOME TO MY WEBSITE</p>
+            <h1>Casandra Marquez</h1>
+            <br>
+            <p class="description">Thank you for taking the time to learn more about what I love doing.<br>
+                 I'm a Computer Science major at the University of Texas at Dallas<br>
+                 working towards my Bachelor's degree. This website was built <br>using HTML, CSS, and JavaScript.
+            </p>
+            <a href="images/casandra_resume_2023.pdf" download class="button download">Download Resume</a>
+        </div>
+    </div>
+</div>
+
+<!-------------------------- Next Screen: Experience and Projects ----------------------------->
+
+<div id="about">
+    <!--------------------------Experience Section-------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.jpg">
+            </div>
+            <div class="about-col-2">
+                <!------Experience Heading------>
+                <h1 class="sub-title">Experience</h1>
+                <br>
+                <p> Some of my skills, extracurricular activities, and education. All these are also reflected on my resume.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                    <p class="tab-links" onclick="opentab('extracurriculars')"><strong>Extracurriculars</strong></p>
+                    <p class="tab-links" onclick="opentab('education')"><strong>Education</strong></p>
+                </div>
+                <!------Skills Tab------>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><strong>UI/UX</strong><br>Designing web/app interfaces using Figma</li>
+                        <li><strong>Web Development</strong><br>Web App development using CSS, HTML, and JavaScript or the Svelte framework.</li>
+                        <li><strong>App Development</strong><br>Building ios apps through Swift, or apps using the Flutter framework.</li>
+                    </ul>
+                </div>
+                <!------Extracurricular Tab------>
+                <div class="tab-contents" id="extracurriculars">
+                    <ul>
+                        <li><strong>Terry Scholars - Tech Chair</strong><br>As the Terry Tech Assistant, my responsibilities include setting 
+                            up technology for meetings and events, website maintenance, and Discord moderation.</li>
+                        <li><strong>Kappa Alpha Theta</strong><br>KAT is a sorority at UTD. Responsibilities include volunteering, academic persuits, and fundraising.</li>
+                        <li><strong>MXSA - Mexican Student Association Member</strong><br>MXSA is a student organization that helps bring Mexican culture and history to UTD.</li>
+                    </ul>
+                </div>
+                <!------Education Tab------>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><strong>HS</strong><br>Frisco HS: GPA 5.5/6.0 weighted and 4.0 unweighted.</li>
+                        <li><strong>University</strong><br>A student at the University of Texas at Dallas pursuing a Bachelor's Degree in
+                            Computer Science.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--------------------------Projects Section-------------------------->
+        <div class="projects" id="projects">
+            <h1 class="sub-title">Projects on Github</h1>
+            <div class="projects-list">
+                <!------iPlan Project 1------>
+                <div>
+                    <h2>iPlan <span style="font-size: 15px; font-weight: 250;">- Front End & Integration</span></h2>
+                    <p>iPlan is everything you need to plan an event compiled in one place, just a touch away.
+                        Created for the ACM Projects UTD division.</p>
+                    <a href="https://github.com/Casi1227/iPlan">Visit Project</a>
+                </div>
+                <!------Oasis Project 2------>
+                <div>
+                    <h2>Oasis <span style="font-size: 15px; font-weight: 250;">- Front End & Google Auth</span></h2>
+                    <p>A website developed through the React library using JavaScript, CSS, and HTML. Displays food banks based on user location.</p>
+                    <a href="https://github.com/Casi1227/HackUTD-2022-Pterrydactyl1">Visit Project</a>
+                </div>
+                <!------ALRISE Project 3------>
+                <div>
+                    <h2>ALRISE <span style="font-size: 15px; font-weight: 250;">- Full Stack & Lead</span></h2>
+                    <p>A website built using CSS, HTML, and JavaScript through the Svelte framework. Created for the ALRISE Summer 2023 Externship Program.</p>
+                    <a href="https://github.com/Casi1227/PhishBusting-first-iteration/tree/main">Visit Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------Designs------------------------->
+<!------Slider: imported in head------>
+<div id="designs">
+    <h1 class="sub-title">Figma Designs</h1>
+    <div class = "design-container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/figma4.png"></div>
+              <div class="swiper-slide"><img src="images/figma3.png"></div>
+              <div class="swiper-slide"><img src="images/figma1.png"></div>
+              <div class="swiper-slide"><img src="images/figma2.png"></div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </div>
+</div>
+
+<!--------------------------Contact--------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <!------Contact Info------>
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><strong>School Email:</strong> CXM210055@UTDALLAS.EDU</p>
+                <p><strong>Personal Email:</strong> CASI.M.2691@GMAIL.COM</p>
+                <p><strong>Phone Number:</strong> 9723704236</p>
+                <p><strong>Instagram:</strong> @STRLCAS</p>
+            </div>
+            <!------Form side: on right------>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------Scripts-------------------------->
+
+<!------For Tabs in Experience Section------>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!------For Swiper in Designs Section------>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+</script>
+
+<!------For Form in Contact Section------>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzP-GHNm_nYpIk3GOpaOUfZxMl8rDif_PRprPCFEuwz_95m1-0ZKVsKffUbxlySWINnhA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Submitted" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
